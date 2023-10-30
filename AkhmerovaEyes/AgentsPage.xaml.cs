@@ -23,11 +23,18 @@ namespace AkhmerovaEyes
         public AgentsPage()
         {
             InitializeComponent();
+            var currentAgents = AkhmerovaEyesEntities.GetContext().Agent.ToList();
+            AgentListView.ItemsSource = currentAgents;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new AddEditPage());
+        }
+
+        private void TBoxSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
