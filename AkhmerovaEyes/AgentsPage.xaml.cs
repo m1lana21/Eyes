@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace AkhmerovaEyes
 {
-    /// <summary>
-    /// Логика взаимодействия для AgentsPage.xaml
-    /// </summary>
     public partial class AgentsPage : Page
     {
         public AgentsPage()
@@ -47,8 +44,12 @@ namespace AkhmerovaEyes
             if (SortBox.SelectedIndex == 5) currentAgents = currentAgents.OrderBy(p => p.Priority).ToList();
             if (SortBox.SelectedIndex == 6) currentAgents = currentAgents.OrderByDescending(p => p.Priority).ToList();
 
-            currentAgents = currentAgents.Where(p => p.Title.ToLower().Contains(TBoxSearch.Text.ToLower())).ToList();
+            currentAgents = currentAgents.Where(p => p.Title.ToLower().Contains(TBoxSearch.Text.ToLower()) 
+            || p.Phone.Replace("+7", "8").Replace(")", "").Replace("(", "").Replace("-", "").Replace(" ", "").Contains(TBoxSearch.Text.Replace("+7", "8").Replace(")", "").Replace("(", "").Replace("-", "").Replace(" ", "")) 
+            || p.Email.ToLower().Contains(TBoxSearch.Text.ToLower())).ToList();
             AgentListView.ItemsSource = currentAgents;
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
