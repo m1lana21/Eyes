@@ -17,9 +17,31 @@
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <StackPanel Margin="10" Orientation="Horizontal">
                 <TextBlock Text="Введите для поиска " TextAlignment="Right"
-                           Width="300" FontSize="15"></TextBlock>
+                           Width="150" FontSize="15"/>
                 <TextBox Name="TBoxSearch" TextChanged="TBoxSearch_TextChanged"
-                         Width="300" FontSize="15"></TextBox>
+                         Width="200" FontSize="15"/>
+            </StackPanel>
+            <StackPanel>
+                <ComboBox Name="FilterBox" SelectionChanged="FilterBox_SelectionChanged" FontSize="15" Width="100" Margin="5">
+                    <TextBlock Text="Все"/>
+                    <TextBlock Text="ЗАО"/>
+                    <TextBlock Text="МКК"/>
+                    <TextBlock Text="МФО"/>
+                    <TextBlock Text="ОАО"/>
+                    <TextBlock Text="ООО"/>
+                    <TextBlock Text="ПАО"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <ComboBox Name="SortBox" SelectionChanged="SortBox_SelectionChanged" FontSize="15" Width="300" Margin="5">
+                    <TextBlock Text="Все"/>
+                    <TextBlock Text="Наименования по возрастанию"/>
+                    <TextBlock Text="Наименования по убыванию"/>
+                    <TextBlock Text="Скидка по возрастанию"/>
+                    <TextBlock Text="Скидка по убыванию"/>
+                    <TextBlock Text="Приоритет по возрастанию"/>
+                    <TextBlock Text="Приоритет по убыванию"/>
+                </ComboBox>
             </StackPanel>
         </WrapPanel>
         <ListView Name="AgentListView" Grid.Row="2">
