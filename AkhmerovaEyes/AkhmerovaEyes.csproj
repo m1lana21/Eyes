@@ -322,14 +322,10 @@
     <Resource Include="Resources\eyssave.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="agents\picture.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="agents\picture.png" />
     <Content Include="AkhmerovaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AkhmerovaModel.edmx</DependentUpon>

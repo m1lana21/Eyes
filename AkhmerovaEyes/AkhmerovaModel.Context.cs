@@ -19,6 +19,7 @@ namespace AkhmerovaEyes
             : base("name=AkhmerovaEyesEntities")
         {
         }
+
         private static AkhmerovaEyesEntities _context;
         public static AkhmerovaEyesEntities GetContext()
         {
@@ -26,7 +27,6 @@ namespace AkhmerovaEyes
                 _context = new AkhmerovaEyesEntities();
             return _context;
         }
-
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
