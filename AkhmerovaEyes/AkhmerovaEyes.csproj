@@ -326,6 +326,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="agents\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="AkhmerovaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AkhmerovaModel.edmx</DependentUpon>
