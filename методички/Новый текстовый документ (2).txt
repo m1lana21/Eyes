@@ -1,0 +1,24 @@
+var currentAgent = (sender as Button).DataContext as Agent;
+
+            var curruntProductSale = Akhmetova_glazkiEntities.GetContext().ProductSale.ToList();
+            curruntProductSale = curruntProductSale.Where(p => p.AgentID == currentAgent.ID).ToList();
+
+            if (curruntProductSale.Count != 0)
+                MessageBox.Show("Невозможно выполнить удаление, так как существует реализация продукции");
+
+            else
+            {
+                if (MessageBox.Show("Вы точно хотите выполнить удаление?", "Внимание!",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        Akhmetova_glazkiEntities.GetContext().Agent.Remove(currentAgent);
+                        Akhmetova_glazkiEntities.GetContext().SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                }
+            }

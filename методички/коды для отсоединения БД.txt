@@ -1,0 +1,17 @@
+private static AkhmerovaEyesEntities _context;
+public static AkhmerovaEyesEntities GetContext()
+{
+    if (_context == null)
+        _context = new AkhmerovaEyesEntities();
+    return _context;
+}
+
+
+
+public string AgentTypeString
+{
+    get
+    {
+        return AgentType.Title;
+    }
+}

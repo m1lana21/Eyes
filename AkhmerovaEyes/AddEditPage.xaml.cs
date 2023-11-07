@@ -23,6 +23,8 @@ namespace AkhmerovaEyes
         public AddEditPage(Agent SelectedAgent)
         {
             InitializeComponent();
+            if (SelectedAgent != null)
+                currentAgent = SelectedAgent;
             DataContext = currentAgent;
         }
 
@@ -76,7 +78,6 @@ namespace AkhmerovaEyes
 
         private void ChangePictureBtn_Click(object sender, RoutedEventArgs e)
         {
-        var currentAgents = AkhmerovaEyesEntities.GetContext().Agent.ToList();
         OpenFileDialog myOpenFileDialog = new OpenFileDialog();
             if (myOpenFileDialog.ShowDialog() == true)
             {
@@ -87,6 +88,31 @@ namespace AkhmerovaEyes
 
         private void DeleteBtn_Click(object sender, RoutedEventArgs e)
         {
+            var currentAgent = (sender as Button).DataContext as Agent;
+
+            var curruntProductSale = AkhmerovaEyesEntities.GetContext().ProductSale.ToList();
+            curruntProductSale = curruntProductSale.Where(p => p.AgentID == currentAgent.ID).ToList();
+
+            if (curruntProductSale.Count != 0)
+                MessageBox.Show("Невозможно выполнить удаление, так как существует реализация продукции");
+
+            else
+            {
+                if (MessageBox.Show("Вы точно хотите выполнить удаление?", "Внимание!",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        AkhmerovaEyesEntities.GetContext().Agent.Remove(currentAgent);
+                        AkhmerovaEyesEntities.GetContext().SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                }
+            }
+
 
         }
     }
