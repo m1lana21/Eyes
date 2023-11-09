@@ -115,6 +115,22 @@ namespace AkhmerovaEyes
 
 
         }
+
+        private void SelectType()
+        {
+            var currentAgents = AkhmerovaEyesEntities.GetContext().Agent.ToList();
+            if (ComboType.SelectedIndex == 0) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 1)).ToList();
+            if (ComboType.SelectedIndex == 1) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 2)).ToList();
+            if (ComboType.SelectedIndex == 2) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 3)).ToList();
+            if (ComboType.SelectedIndex == 3) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 4)).ToList();
+            if (ComboType.SelectedIndex == 4) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 5)).ToList();
+            if (ComboType.SelectedIndex == 5) currentAgents = currentAgents.Where(p => (p.AgentTypeID == 6)).ToList();
+        }
+
+        private void ComboType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SelectType();
+        }
     }
 }
 

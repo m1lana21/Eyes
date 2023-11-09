@@ -49,7 +49,7 @@
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
             <TextBlock Text="Тип агента" FontSize="15" Height="25" Width="100" Margin="5"></TextBlock>
             <ComboBox FontSize="15" Height="25" Width="100" Name="ComboType"
-                       Text="{Binding AgentTypeID}">
+                       Text="{Binding AgentTypeID}" SelectionChanged="ComboType_SelectionChanged">
                 <TextBlock Text="ЗАО"/>
                 <TextBlock Text="МКК"/>
                 <TextBlock Text="МФО"/>
