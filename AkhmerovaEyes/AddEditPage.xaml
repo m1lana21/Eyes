@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:AkhmerovaEyes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPage">
+      Title="AddEditPage" FontFamily="Century Gothic">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -49,13 +49,13 @@
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
             <TextBlock Text="Тип агента" FontSize="15" Height="25" Width="100" Margin="5"></TextBlock>
             <ComboBox FontSize="15" Height="25" Width="100" Name="ComboType"
-                       Text="{Binding AgentTypeID}" SelectionChanged="ComboType_SelectionChanged">
-                <TextBlock Text="ЗАО"/>
-                <TextBlock Text="МКК"/>
-                <TextBlock Text="МФО"/>
-                <TextBlock Text="ОАО"/>
-                <TextBlock Text="ООО"/>
-                <TextBlock Text="ПАО"/>
+                        >
+                <TextBlock>ЗАО</TextBlock>
+                <TextBlock>МКК</TextBlock>
+                <TextBlock>МФО</TextBlock>
+                <TextBlock>ОАО</TextBlock>
+                <TextBlock>ООО</TextBlock>
+                <TextBlock>ПАО</TextBlock>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
