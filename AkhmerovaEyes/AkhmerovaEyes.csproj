@@ -88,6 +88,9 @@
     <Compile Include="MaterialType.cs">
       <DependentUpon>AkhmerovaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PriorityWindow.xaml.cs">
+      <DependentUpon>PriorityWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <DependentUpon>AkhmerovaModel.tt</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PriorityWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager.cs" />

@@ -153,3 +153,32 @@ D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\A
 D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.CopyComplete
 D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.exe
 D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.pdb
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\AkhmerovaEyes.exe.config
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\AkhmerovaEyes.exe
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\AkhmerovaEyes.pdb
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\EntityFramework.dll
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\EntityFramework.SqlServer.dll
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\EntityFramework.xml
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\EntityFramework.SqlServer.xml
+D:\ucheba\РПМ\14\AkhmerovaEyes\bin\Debug\ru\EntityFramework.resources.dll
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.AssemblyReference.cache
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AddEditPage.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AgentsPage.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\MainWindow.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\App.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes_Content.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes_MarkupCompile.cache
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes_MarkupCompile.lref
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\App.baml
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AddEditPage.baml
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AgentsPage.baml
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\MainWindow.baml
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.g.resources
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.Properties.Resources.resources
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.GenerateResource.cache
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.CoreCompileInputs.cache
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.CopyComplete
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.exe
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.pdb
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\PriorityWindow.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\PriorityWindow.baml

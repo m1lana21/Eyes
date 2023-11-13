@@ -44,8 +44,8 @@ namespace AkhmerovaEyes
             if(SortBox.SelectedIndex == 0) currentAgents = currentAgents.ToList();
             if (SortBox.SelectedIndex == 1) currentAgents = currentAgents.OrderBy(p => p.Title).ToList();
             if (SortBox.SelectedIndex == 2) currentAgents = currentAgents.OrderByDescending(p => p.Title).ToList();
-            /*if (SortBox.SelectedIndex == 3) currentAgents = currentAgents.ToList();
-            if (SortBox.SelectedIndex == 4) currentAgents = currentAgents.ToList();*/
+            if (SortBox.SelectedIndex == 3) currentAgents = currentAgents.OrderBy(p => p.SalePercent).ToList();
+            if (SortBox.SelectedIndex == 4) currentAgents = currentAgents.OrderByDescending(p => p.SalePercent).ToList();
             if (SortBox.SelectedIndex == 5) currentAgents = currentAgents.OrderBy(p => p.Priority).ToList();
             if (SortBox.SelectedIndex == 6) currentAgents = currentAgents.OrderByDescending(p => p.Priority).ToList();
 
@@ -205,5 +205,29 @@ namespace AkhmerovaEyes
                 UpdateAgents();
             }
         }
+
+        private void ChangePriorityButton_Click(object sender, RoutedEventArgs e)
+        {
+            PriorityWindow window = new PriorityWindow();
+            window.ShowDialog();
+            if (string.IsNullOrEmpty(window.PriorityTB.Text)) return;
+            MessageBox.Show(window.PriorityTB.Text);
+            foreach(Agent agent in AgentListView.SelectedItems)
+            {
+                agent.Priority = Convert.ToInt32(window.PriorityTB.Text);
+            }
+            try
+            {
+                AkhmerovaEyesEntities.GetContext().SaveChanges();
+                MessageBox.Show("информация сохранена");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            UpdateAgents();
+        }
+
+        
     }
 }
