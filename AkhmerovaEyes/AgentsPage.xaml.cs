@@ -228,6 +228,16 @@ namespace AkhmerovaEyes
             UpdateAgents();
         }
 
-        
+        private void AgentListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (AgentListView.SelectedItems.Count > 1)
+            {
+                ChangePriorityButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                ChangePriorityButton.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }
