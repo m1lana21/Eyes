@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ucheba\РПМ\14\AkhmerovaEyes\obj\Debug\
+D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\
 AkhmerovaEyes
 none
 false
 DEBUG;TRACE
-D:\ucheba\РПМ\14\AkhmerovaEyes\App.xaml
-41194720548
+D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\App.xaml
+51459681285
 288866033
-26-1082246633
-192121273498
-AddEditPage.xaml;AgentsPage.xaml;MainWindow.xaml;PriorityWindow.xaml;
+27-1581006966
+191448015770
+AddEditPage.xaml;AgentsPage.xaml;MainWindow.xaml;PriorityWindow.xaml;SalesPage.xaml;
 
 True
 

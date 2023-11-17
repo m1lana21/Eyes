@@ -103,10 +103,9 @@
                             <TextBlock Text="Приоритетность: " Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" FontSize="15" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Text="{Binding Priority}" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" FontSize="15" TextWrapping="Wrap"></TextBlock>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
-                            <Button HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4" Name="EditButton" Content="редактировать" Margin="2" Click="EditButton_Click"></Button>
+                        
+                        <Button HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4" Name="EditButton" Content="редактировать" Margin="2" Click="EditButton_Click"></Button>
                             
-                        </StackPanel>
                             
                         <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="2">
                             <TextBlock Text="{Binding SalePercent,Mode=OneWay}" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" FontSize="20" TextWrapping="Wrap"></TextBlock>
@@ -117,6 +116,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4" Name="ChangePriorityButton" Content="изменить приоритет" Margin="2" Width="220"  Click="ChangePriorityButton_Click" Visibility="Hidden"></Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4">
+            <Button Name="SalesButton" Content="Реализация продукции" Width="250" Click="SalesButton_Click"></Button>
+            <Button  Name="ChangePriorityButton" Content="изменить приоритет" Margin="2" Width="220"  Click="ChangePriorityButton_Click" Visibility="Hidden"></Button>
+        </StackPanel>
     </Grid>
 </Page>

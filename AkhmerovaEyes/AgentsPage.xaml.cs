@@ -239,5 +239,12 @@ namespace AkhmerovaEyes
                 ChangePriorityButton.Visibility = Visibility.Hidden;
             }
         }
+
+        private void SalesButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SalesPage());
+
+
+        }
     }
 }

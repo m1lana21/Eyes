@@ -106,6 +106,9 @@
     <Compile Include="ProductType.cs">
       <DependentUpon>AkhmerovaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SalesPage.xaml.cs">
+      <DependentUpon>SalesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Shop.cs">
       <DependentUpon>AkhmerovaModel.tt</DependentUpon>
     </Compile>
@@ -149,6 +152,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PriorityWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SalesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
