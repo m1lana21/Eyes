@@ -242,3 +242,5 @@ D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.C
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.csproj.CopyComplete
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.exe
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.pdb
+D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AddSalePage.g.cs
+D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AddSalePage.baml

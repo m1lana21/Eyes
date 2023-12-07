@@ -93,24 +93,6 @@ namespace AkhmerovaEyes
             if (string.IsNullOrWhiteSpace(currentAgent.Email))
                 errors.AppendLine("Укажите почту агента");
 
-
-
-
-            //var currentType = (TextBlock)ComboType.SelectedItem;
-            //string currentTypeContent = currentType.Text;
-
-            //foreach (AgentType type in agentTypesDBList)
-            //{
-
-            //    if (type.Title.ToString() == currentTypeContent)
-            //    {
-            //        currentAgent.AgentType = type;
-            //        currentAgent.AgentTypeID = type.ID;
-            //        break;
-
-            //    }
-            //}
-
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
@@ -164,8 +146,10 @@ namespace AkhmerovaEyes
 
         }
 
-
-
-
+        private void SalesButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SalesPage((sender as Button).DataContext as Agent));
+            
+        }
     }
 }
