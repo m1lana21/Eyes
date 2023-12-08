@@ -244,3 +244,9 @@ D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.exe
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AkhmerovaEyes.pdb
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AddSalePage.g.cs
 D:\ucheba\РПМ\14\AkhmerovaEyes\AkhmerovaEyes\obj\Debug\AddSalePage.baml
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\AddSalePage.g.cs
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\PriorityWindow.g.cs
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\SalesPage.g.cs
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\AddSalePage.baml
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\PriorityWindow.baml
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Debug\SalesPage.baml

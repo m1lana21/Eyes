@@ -19,9 +19,10 @@ namespace AkhmerovaEyes
     /// </summary>
     public partial class PriorityWindow : Window
     {
-        public PriorityWindow()
+        public PriorityWindow(int max)
         {
             InitializeComponent();
+            PriorityTB.Text = max.ToString();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

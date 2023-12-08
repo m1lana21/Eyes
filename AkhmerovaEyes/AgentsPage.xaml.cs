@@ -208,12 +208,22 @@ namespace AkhmerovaEyes
 
         private void ChangePriorityButton_Click(object sender, RoutedEventArgs e)
         {
-            PriorityWindow window = new PriorityWindow();
+            int max = 0;
+            foreach (Agent agent in AgentListView.SelectedItems)
+            {
+                if (agent.Priority >= max)
+                {
+                    max = agent.Priority;
+                }     
+            }
+            PriorityWindow window = new PriorityWindow(max);
             window.ShowDialog();
             if (string.IsNullOrEmpty(window.PriorityTB.Text)) return;
             MessageBox.Show(window.PriorityTB.Text);
-            foreach(Agent agent in AgentListView.SelectedItems)
+            
+            foreach (Agent agent in AgentListView.SelectedItems)
             {
+                
                 agent.Priority = Convert.ToInt32(window.PriorityTB.Text);
             }
             try

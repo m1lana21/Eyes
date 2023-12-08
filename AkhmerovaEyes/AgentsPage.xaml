@@ -116,6 +116,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button  Name="ChangePriorityButton" Content="изменить приоритет" Margin="2" Width="220"  Click="ChangePriorityButton_Click" Visibility="Hidden"></Button>
+        <Button  Name="ChangePriorityButton" Content="изменить приоритет" Margin="2" Width="220"  Grid.Row="4" HorizontalAlignment="Left" Click="ChangePriorityButton_Click" Visibility="Hidden"></Button>
     </Grid>
 </Page>

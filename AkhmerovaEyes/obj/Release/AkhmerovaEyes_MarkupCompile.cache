@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\3 Курс\ИСП-31\Ахмерова\project\AkhmerovaEyes\obj\Release\
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\obj\Release\
 AkhmerovaEyes
 none
 false
 TRACE
-D:\3 Курс\ИСП-31\Ахмерова\project\AkhmerovaEyes\App.xaml
-42075719510
+D:\3 Курс\ИСП-31\Ахмерова\AkhmerovaEyes\App.xaml
+6429823510
 2-1164800776
-251425721003
-19673980545
-AddEditPage.xaml;AgentsPage.xaml;MainWindow.xaml;PriorityWindow.xaml;
+271301724881
+19185051540
+AddEditPage.xaml;AddSalePage.xaml;AgentsPage.xaml;MainWindow.xaml;PriorityWindow.xaml;SalesPage.xaml;
 
 True
 
